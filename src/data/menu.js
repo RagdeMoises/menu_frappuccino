@@ -6,12 +6,12 @@
 //   { id: 'bebidas', label: 'Bebidas' },
 // ];
  export const CATEGORIES = [
-    { id: "otros", label: "Almuerzos" },  
+    // { id: "otros", label: "Almuerzos" },  
     { id: "combos", label: "Combos" },
     { id: "hamburguesas", label: "Hamburguesas" },    
     { id: "pepitos", label: "Pepitos" },
     { id: "bebidas", label: "Bebidas" },
-    // { id: "otros", label: "Otros" },
+    { id: "otros", label: "Otros" },
     { id: "adicionales", label: "Adicionales" }
   ];
 

@@ -24,11 +24,11 @@ export const CategoryTabs = ({ selectedCategory, onSelectCategory }) => {
     
     if (isActive) {
       // Estilo Activo: Degradado Naranja/Rojo con sombra difuminada (Estilo imagen referencia)
-      return `${baseClass} bg-gradient-to-r from-yellow-500 to-red-500 text-white border-transparent shadow-lg shadow-yellow-500/30 transform scale-105`;
+      return `${baseClass} bg-gradient-to-r from-blue-500 to-red-500 text-white border-transparent shadow-lg shadow-blue-500/30 transform scale-105`;
     }
     
     // Estilo Inactivo: Blanco limpio con borde suave
-    return `${baseClass} bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:border-yellow-200 dark:hover:border-gray-600 hover:text-yellow-500 dark:hover:text-gray-200`;
+    return `${baseClass} bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-gray-600 hover:text-blue-500 dark:hover:text-gray-200`;
   };
 
   return (

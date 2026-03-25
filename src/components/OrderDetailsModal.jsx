@@ -27,7 +27,7 @@ export const OrderDetailsModal = ({ isOpen, onClose }) => {
   };
 
   // Estilo de inputs unificado
-  const inputClass = "mt-2 block w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm py-3 px-4 text-gray-900 dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200 placeholder-gray-400";
+  const inputClass = "mt-2 block w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm py-3 px-4 text-gray-900 dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 placeholder-gray-400";
   const labelClass = "block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1";
 
   return (
@@ -111,7 +111,7 @@ export const OrderDetailsModal = ({ isOpen, onClose }) => {
                         type="button"
                         onClick={() => handleTypeChange('delivery')}
                         className={`flex-1 py-3 rounded-xl text-center font-extrabold transition-all duration-200 flex items-center justify-center gap-2 ${formData.orderType === 'delivery'
-                          ? 'bg-white dark:bg-gray-900 shadow-md text-gray-900 dark:text-white ring-2 ring-yellow-500/50'
+                          ? 'bg-white dark:bg-gray-900 shadow-md text-gray-900 dark:text-white ring-2 ring-blue-500/50'
                           : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
                           }`}
                       >
@@ -123,7 +123,7 @@ export const OrderDetailsModal = ({ isOpen, onClose }) => {
                         type="button"
                         onClick={() => handleTypeChange('pickup')}
                         className={`flex-1 py-3 rounded-xl text-center font-extrabold transition-all duration-200 flex items-center justify-center gap-2 ${formData.orderType === 'pickup'
-                          ? 'bg-white dark:bg-gray-900 shadow-md text-gray-900 dark:text-white ring-2 ring-yellow-500/50'
+                          ? 'bg-white dark:bg-gray-900 shadow-md text-gray-900 dark:text-white ring-2 ring-blue-500/50'
                           : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
                           }`}
                       >
@@ -157,9 +157,9 @@ export const OrderDetailsModal = ({ isOpen, onClose }) => {
                   type="submit"
                   form="order-form"
                   className="w-full inline-flex justify-center items-center rounded-xl shadow-lg px-6 py-3 
-                             bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600
+                             bg-gradient-to-r from-blue-500 to-red-500 hover:from-blue-600 hover:to-red-600
                              text-lg font-extrabold text-white 
-                             shadow-yellow-500/30 transition-all duration-300 active:scale-[0.98] sm:ml-3 sm:w-auto"
+                             shadow-blue-500/30 transition-all duration-300 active:scale-[0.98] sm:ml-3 sm:w-auto"
                 >
                   Continuar al Pago
                 </button>

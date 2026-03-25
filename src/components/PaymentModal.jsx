@@ -28,7 +28,7 @@ const OrderConfirmationModal = ({
     PagoMovil: { label: "PAGO MÓVIL", color: "text-blue-600 dark:text-blue-400" },
     BsEfectivo: { label: "EFECTIVO BS", color: "text-green-600 dark:text-green-400" },
     Mixto: { label: "MIXTO", color: "text-purple-600 dark:text-purple-400" },
-    $Efectivo: { label: "DIVISAS", color: "text-yellow-600 dark:text-yellow-400" },
+    $Efectivo: { label: "DIVISAS", color: "text-blue-600 dark:text-blue-400" },
     PuntoVenta: { label: "PUNTO DE VENTA", color: "text-indigo-600 dark:text-indigo-400" }
   };
 
@@ -269,7 +269,7 @@ const RecentOrderModal = ({
                   </div>
                   <div className={`px-3 py-1 rounded-full text-xs font-bold ${
                     recentOrder.orderStatus === 'Pendiente' 
-                      ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+                      ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300'
                       : recentOrder.orderStatus === 'Procesando'
                       ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300'
                       : 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
@@ -279,14 +279,14 @@ const RecentOrderModal = ({
                 </div> */}
 
                 {/* Información de Tiempo de Espera */}
-                {/* <div className="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-lg">
+                {/* <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg">
                   <div className="flex items-center">
-                    <Clock className="text-yellow-600 dark:text-yellow-400 mr-2" size={18} />
+                    <Clock className="text-blue-600 dark:text-blue-400 mr-2" size={18} />
                     <div>
-                      <p className="text-sm font-medium text-yellow-800 dark:text-yellow-300">
+                      <p className="text-sm font-medium text-blue-800 dark:text-blue-300">
                         ⏱️ Tiempo de espera restante
                       </p>
-                      <p className="text-sm text-yellow-700 dark:text-yellow-400">
+                      <p className="text-sm text-blue-700 dark:text-blue-400">
                         Puedes realizar otro pedido en {3 - recentOrder.createdMinutesAgo} minutos
                       </p>
                     </div>
@@ -647,9 +647,9 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
 
         <div className="space-y-4">
           {/* Total a Pagar (Destacado) */}
-          <div className="flex justify-between items-center bg-yellow-50 dark:bg-gray-800 p-4 rounded-xl border border-yellow-200 dark:border-gray-700">
+          <div className="flex justify-between items-center bg-blue-50 dark:bg-gray-800 p-4 rounded-xl border border-blue-200 dark:border-gray-700">
             <p className="text-lg font-bold text-gray-900 dark:text-white">Sub Total a Pagar:</p>
-            <p className="text-2xl font-extrabold text-yellow-600 dark:text-yellow-400">
+            <p className="text-2xl font-extrabold text-blue-600 dark:text-blue-400">
               {formatTotal(total())} $
             </p>
           </div>
@@ -667,12 +667,12 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
                   onClick={() => setPaymentMethod(method)}
                   disabled={isSubmitting}
                   className={`flex items-center p-4 border rounded-xl transition-all duration-200 text-left ${isSelected
-                    ? 'border-yellow-500 bg-yellow-50 dark:bg-gray-800 ring-2 ring-yellow-500/50 shadow-md shadow-yellow-100 dark:shadow-none'
-                    : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 hover:border-yellow-200 dark:hover:border-yellow-500/50'
+                    ? 'border-blue-500 bg-blue-50 dark:bg-gray-800 ring-2 ring-blue-500/50 shadow-md shadow-blue-100 dark:shadow-none'
+                    : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 hover:border-blue-200 dark:hover:border-blue-500/50'
                     } ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
                   <div className={`flex-shrink-0 p-3 rounded-xl ${isSelected
-                    ? 'bg-yellow-600 text-white shadow-md shadow-yellow-500/50'
+                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/50'
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
                     }`}>
                     <Icon size={24} />
@@ -689,7 +689,7 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
                     </p>
                   </div>
                   {isSelected && (
-                    <CheckCircle size={20} className="text-yellow-500 dark:text-yellow-400 flex-shrink-0" />
+                    <CheckCircle size={20} className="text-blue-500 dark:text-blue-400 flex-shrink-0" />
                   )}
                 </button>
               );

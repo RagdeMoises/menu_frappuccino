@@ -115,7 +115,7 @@ export const CartDrawer = () => {
                   </p>
                   <button
                     onClick={toggleCart}
-                    className="px-6 py-3 text-yellow-600 dark:text-yellow-500 font-bold border border-yellow-600 dark:border-yellow-500 rounded-lg hover:bg-yellow-50 dark:hover:bg-gray-800 transition-colors"
+                    className="px-6 py-3 text-blue-600 dark:text-blue-500 font-bold border border-blue-600 dark:border-blue-500 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors"
                   >
                     Volver al Menú
                   </button>
@@ -183,7 +183,7 @@ export const CartDrawer = () => {
                           <button
                             onClick={(e) => handleStartEditNote(item.id, e)}
                             className={`ml-3 p-2 rounded-lg transition-all flex items-center gap-1 ${item.note
-                              ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 hover:bg-yellow-200 dark:hover:bg-yellow-900/50'
+                              ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900/50'
                               : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
                               }`}
                             aria-label={item.note ? "Editar nota" : "Añadir nota"}
@@ -214,7 +214,7 @@ export const CartDrawer = () => {
                                     onChange={(e) => handleNoteChange(item.id, e.target.value)}
                                     onBlur={() => handleSaveNote(item.id)}
                                     onKeyDown={(e) => handleNoteKeyDown(e, item.id)}
-                                    className="w-full px-3 py-2 text-sm border border-yellow-300 dark:border-yellow-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none"
+                                    className="w-full px-3 py-2 text-sm border border-blue-300 dark:border-blue-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                                     placeholder="Escribe una nota...Ej: Sin cebolla, full salsa, etc."
                                     rows="2"
                                     maxLength="100"
@@ -237,8 +237,8 @@ export const CartDrawer = () => {
                                     <div className="flex items-start justify-between">
                                       <div className="flex-1">
                                         {/* <div className="flex items-center gap-1 mb-1">
-                                          <MessageSquare size={14} className="text-yellow-500 dark:text-yellow-400" />
-                                          <span className="text-xs font-medium text-yellow-600 dark:text-yellow-400">
+                                          <MessageSquare size={14} className="text-blue-500 dark:text-blue-400" />
+                                          <span className="text-xs font-medium text-blue-600 dark:text-blue-400">
                                             Nota:
                                           </span>
                                         </div> */}
@@ -269,7 +269,7 @@ export const CartDrawer = () => {
                 {/* Total */}
                 <div className="flex justify-between text-4xl font-bold text-gray-900 dark:text-white mb-3">
                   <p>Sub Total</p>
-                  <p className="text-yellow-600 dark:text-yellow-400">{formatTotal(total())} $</p>
+                  <p className="text-blue-600 dark:text-blue-400">{formatTotal(total())} $</p>
                 </div>
 
                 {/* Nota de Delivery */}
@@ -282,8 +282,8 @@ export const CartDrawer = () => {
                   onClick={handleOrderClick}
                   className="w-full flex justify-center items-center px-6 py-4 border border-transparent rounded-xl shadow-lg 
                              text-lg font-extrabold text-white 
-                             bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600
-                             shadow-yellow-500/30 transition-all duration-300 active:scale-[0.98]"
+                             bg-gradient-to-r from-blue-500 to-red-500 hover:from-blue-600 hover:to-red-600
+                             shadow-blue-500/30 transition-all duration-300 active:scale-[0.98]"
                 >
                   Aceptar
                 </button>

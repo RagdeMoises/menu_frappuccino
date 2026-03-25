@@ -85,7 +85,7 @@ function App() {
               />
             </div>
             <h1 className="text-xl font-extrabold text-gray-900 dark:text-white hidden sm:block tracking-tighter">
-              IROUMBO <span className="text-yellow-600">MENÚ</span>
+              FRAPPUCCINO <span className="text-blue-600">MENÚ</span>
             </h1>
           </button>
 
@@ -99,7 +99,7 @@ function App() {
                 }
               }}
               className={`p-3 rounded-full transition-all duration-200 shadow-sm ${showSearch || searchQuery
-                ? 'bg-yellow-600 text-white shadow-lg shadow-yellow-500/30'
+                ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
                 : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
               aria-label="Buscar productos"
@@ -127,7 +127,7 @@ function App() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Buscar en todos los productos (ej: doble queso, papas)..."
-                className="w-full pl-12 pr-12 py-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-3 focus:ring-yellow-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-base shadow-md transition-all duration-200"
+                className="w-full pl-12 pr-12 py-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-3 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-base shadow-md transition-all duration-200"
                 autoFocus
               />
               {searchQuery && (
@@ -163,7 +163,7 @@ function App() {
                 <span className="animate-pulse">→</span>
               </div>
               <div className="h-1 w-24 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                <div className="h-full w-1/3 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full animate-pulse" />
+                <div className="h-full w-1/3 bg-gradient-to-r from-blue-500 to-red-500 rounded-full animate-pulse" />
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@ function App() {
         {/* {searchQuery && (
           <div className="mb-6">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-              Resultados para: <span className="text-yellow-600">"{searchQuery}"</span>
+              Resultados para: <span className="text-blue-600">"{searchQuery}"</span>
             </h2>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               {filteredProducts.length} producto{filteredProducts.length !== 1 ? 's' : ''} encontrado{filteredProducts.length !== 1 ? 's' : ''}.
@@ -232,7 +232,7 @@ function App() {
                   <button
                     onClick={handleClearAllFilters}
                     className="px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-extrabold active:scale-95 transition-all duration-300 
-                               bg-gradient-to-r from-yellow-500 to-red-500 text-white hover:from-yellow-600 hover:to-red-600 shadow-lg shadow-yellow-500/30"
+                               bg-gradient-to-r from-blue-500 to-red-500 text-white hover:from-blue-600 hover:to-red-600 shadow-lg shadow-blue-500/30"
                   >
                     Mostrar todos los productos
                   </button>

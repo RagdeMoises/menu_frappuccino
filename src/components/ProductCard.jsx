@@ -146,7 +146,7 @@ export const ProductCard = ({ product }) => {
           {/* Badge de Especialidad (Si aplica) */}
           {product.es_especialidad && (
             <div className="absolute top-3 left-3 z-10 text-white">
-              <Star size={21} className="fill-yellow-300 text-yellow-400 border-yellow-900" />
+              <Star size={21} className="fill-blue-300 text-blue-400 border-blue-900" />
             </div>
           )}
 
@@ -184,7 +184,7 @@ export const ProductCard = ({ product }) => {
                 e.stopPropagation();
                 addToCart(product);
               }}
-              className="w-10 h-10 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center hover:bg-yellow-600 dark:hover:bg-yellow-500 hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-gray-200 dark:shadow-none"
+              className="w-10 h-10 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-gray-200 dark:shadow-none"
               aria-label="Agregar al carrito"
             >
               <Plus size={20} strokeWidth={2.5} />
@@ -194,7 +194,7 @@ export const ProductCard = ({ product }) => {
                 e.stopPropagation();
                 addToCart(product);
               }}
-              className="w-20 h-10 rounded-md bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center hover:bg-yellow-600 dark:hover:bg-yellow-500 hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-gray-200 dark:shadow-none"
+              className="w-20 h-10 rounded-md bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center hover:bg-blue-600 dark:hover:bg-blue-500 hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-gray-200 dark:shadow-none"
               aria-label="Agregar al carrito"
             >
               Agregar
@@ -252,7 +252,7 @@ export const ProductCard = ({ product }) => {
                   {/* Badge de Especialidad en modal */}
                   {product.es_especialidad && (
                     <div className="absolute top-4 left-4 z-10">
-                      <Star size={24} className="fill-yellow-300 text-yellow-400" />
+                      <Star size={24} className="fill-blue-300 text-blue-400" />
                     </div>
                   )}
                 </div>
@@ -283,7 +283,7 @@ export const ProductCard = ({ product }) => {
                               scrollToTop();
                             }
                           }}
-                          className="text-yellow-600 dark:text-yellow-400 font-medium text-sm hover:underline focus:outline-none flex items-center gap-1"
+                          className="text-blue-600 dark:text-blue-400 font-medium text-sm hover:underline focus:outline-none flex items-center gap-1"
                         >
                           {showFullDescription ? (
                             <>
@@ -330,7 +330,7 @@ export const ProductCard = ({ product }) => {
                                 scrollToTop();
                               }
                             }}
-                            className="text-yellow-600 dark:text-yellow-400 font-medium text-sm hover:underline focus:outline-none flex items-center gap-1"
+                            className="text-blue-600 dark:text-blue-400 font-medium text-sm hover:underline focus:outline-none flex items-center gap-1"
                           >
                             {showFullAdditionalInfo ? (
                               <>
@@ -413,7 +413,7 @@ export const ProductCard = ({ product }) => {
                         e.stopPropagation();
                         handleAddToCart();
                       }}
-                      className="w-full py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-yellow-600 dark:hover:bg-yellow-500 transition-colors duration-300 shadow-lg"
+                      className="w-full py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors duration-300 shadow-lg"
                     >
                       {/* <Plus size={24} /> */}
                       {/* Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - $ {(parseFloat(product.price) * quantity).toFixed(2)} */}
@@ -435,7 +435,7 @@ export const ProductCard = ({ product }) => {
                         if (showFullDescription) setShowFullDescription(false);
                         if (showFullAdditionalInfo) setShowFullAdditionalInfo(false);
                       }}
-                      className="w-full py-4 bg-yellow-600 dark:bg-yellow-500 text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-yellow-700 dark:hover:bg-yellow-600 transition-colors duration-300"
+                      className="w-full py-4 bg-blue-600 dark:bg-blue-500 text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300"
                     >
                       <ChevronUp size={24} />
                       Volver para pedir
@@ -463,7 +463,7 @@ export const ProductCard = ({ product }) => {
                     {/* Badge de Especialidad */}
                     {product.es_especialidad && (
                       <div className="absolute top-4 left-4 z-10">
-                        <Star size={28} className="fill-yellow-300 text-yellow-400" />
+                        <Star size={28} className="fill-blue-300 text-blue-400" />
                       </div>
                     )}
 
@@ -501,7 +501,7 @@ export const ProductCard = ({ product }) => {
                         {isDescriptionLong && (
                           <button
                             onClick={handleToggleDescription}
-                            className="text-yellow-600 dark:text-yellow-400 font-medium hover:underline focus:outline-none flex items-center gap-1"
+                            className="text-blue-600 dark:text-blue-400 font-medium hover:underline focus:outline-none flex items-center gap-1"
                           >
                             {showFullDescription ? (
                               <>
@@ -538,7 +538,7 @@ export const ProductCard = ({ product }) => {
                           {isAdditionalInfoLong && (
                             <button
                               onClick={handleToggleAdditionalInfo}
-                              className="text-yellow-600 dark:text-yellow-400 font-medium hover:underline focus:outline-none flex items-center gap-1"
+                              className="text-blue-600 dark:text-blue-400 font-medium hover:underline focus:outline-none flex items-center gap-1"
                             >
                               {showFullAdditionalInfo ? (
                                 <>
@@ -612,7 +612,7 @@ export const ProductCard = ({ product }) => {
                         e.stopPropagation();
                         handleAddToCart();
                       }}
-                      className="w-full py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-yellow-600 dark:hover:bg-yellow-500 transition-colors duration-300 shadow-lg mt-auto"
+                      className="w-full py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors duration-300 shadow-lg mt-auto"
                     >
                       {/* <Plus size={28} />
                       Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - $ {(parseFloat(product.price) * quantity).toFixed(2)} */}

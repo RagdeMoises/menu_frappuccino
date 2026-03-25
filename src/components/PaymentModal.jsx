@@ -106,7 +106,7 @@ const OrderConfirmationModal = ({
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Teléfono:
                   </span>
-                  <p className="text-2xl text-gray-500 dark:text-gray-400 mb-1">0424-1496884</p>
+                  <p className="text-2xl text-gray-500 dark:text-gray-400 mb-1">0424-999999</p>
 
                   {/* <a 
                       href="tel:+584241496884"

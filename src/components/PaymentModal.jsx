@@ -74,7 +74,7 @@ const OrderConfirmationModal = ({
                   Sub Total (sin delivery)
                 </p>
                 <p className="text-2xl font-extrabold text-green-600 dark:text-green-400">
-                  €{Number(totalAmount).toFixed(2)}
+                  ${Number(totalAmount).toFixed(2)}
                 </p>
               </div> */}
             </div>
@@ -83,7 +83,7 @@ const OrderConfirmationModal = ({
               <div>
 
                 <p className="text-base text-gray-700 dark:text-gray-300 mb-3">
-                  Para procesar tu orden, por favor contacta directamente a Tomy Burguer por Whatsaap e indica el número de tu pedido.
+                  Para procesar tu orden, por favor contacta directamente por Whatsaap e indica el número de tu pedido.
                 </p>
 
                 {/* <div className="bg-white dark:bg-gray-800 p-3 rounded-lg mb-3">
@@ -522,7 +522,7 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
   // messageParts.push(`*Pedido:*`);
 
   // const itemsList = pendingOrderData.items.map(item => 
-  //   `• ${item.quantity}x ${item.name} (€${(item.price * item.quantity).toFixed(2)})`
+  //   `• ${item.quantity}x ${item.name} ($${(item.price * item.quantity).toFixed(2)})`
   // ).join('\n');
   // messageParts.push(itemsList);
 
@@ -534,7 +534,7 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
   //   messageParts.push(``);
   // }
 
-  // messageParts.push(`*Sub Total:* €${pendingOrderData.totalAmount}`);
+  // messageParts.push(`*Sub Total:* $${pendingOrderData.totalAmount}`);
 
   // const paymentMethodMap = {
   //   PagoMovil: "PAGO MÓVIL",
@@ -650,7 +650,7 @@ export const PaymentModal = ({ isOpen, onClose, orderDetails, onBack }) => {
           <div className="flex justify-between items-center bg-yellow-50 dark:bg-gray-800 p-4 rounded-xl border border-yellow-200 dark:border-gray-700">
             <p className="text-lg font-bold text-gray-900 dark:text-white">Sub Total a Pagar:</p>
             <p className="text-2xl font-extrabold text-yellow-600 dark:text-yellow-400">
-              {formatTotal(total())} €
+              {formatTotal(total())} $
             </p>
           </div>
 

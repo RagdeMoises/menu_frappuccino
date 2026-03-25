@@ -174,7 +174,7 @@ export const ProductCard = ({ product }) => {
             <div className="flex flex-col">
               {/* Precio */}
               <span className="text-xl font-extrabold text-gray-900 dark:text-white">
-                € {formattedPrice}
+                $ {formattedPrice}
               </span>
             </div>
 
@@ -262,7 +262,7 @@ export const ProductCard = ({ product }) => {
                   {/* Precio fijo */}
                   <div className="mb-4">
                     <span className="text-2xl font-extrabold text-gray-900 dark:text-white">
-                      € {formattedPrice}
+                      $ {formattedPrice}
                     </span>
                   </div>
 
@@ -401,7 +401,7 @@ export const ProductCard = ({ product }) => {
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                          € {(parseFloat(product.price) * quantity).toFixed(2)}
+                          $ {(parseFloat(product.price) * quantity).toFixed(2)}
                         </span>
                       </div>
 
@@ -416,7 +416,7 @@ export const ProductCard = ({ product }) => {
                       className="w-full py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-yellow-600 dark:hover:bg-yellow-500 transition-colors duration-300 shadow-lg"
                     >
                       {/* <Plus size={24} /> */}
-                      {/* Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - € {(parseFloat(product.price) * quantity).toFixed(2)} */}
+                      {/* Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - $ {(parseFloat(product.price) * quantity).toFixed(2)} */}
                       Agregar al carrito
                     </button>
                   </div>
@@ -487,7 +487,7 @@ export const ProductCard = ({ product }) => {
                     {/* Precio */}
                     <div className="mb-6">
                       <span className="text-4xl font-extrabold text-gray-900 dark:text-white">
-                        € {formattedPrice}
+                        $ {formattedPrice}
                       </span>
                     </div>
 
@@ -601,7 +601,7 @@ export const ProductCard = ({ product }) => {
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                          € {(parseFloat(product.price) * quantity).toFixed(2)}
+                          $ {(parseFloat(product.price) * quantity).toFixed(2)}
                         </span>
                       </div>
                     </div>
@@ -615,7 +615,7 @@ export const ProductCard = ({ product }) => {
                       className="w-full py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-yellow-600 dark:hover:bg-yellow-500 transition-colors duration-300 shadow-lg mt-auto"
                     >
                       {/* <Plus size={28} />
-                      Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - € {(parseFloat(product.price) * quantity).toFixed(2)} */}
+                      Agregar {quantity > 1 ? `${quantity} al carrito` : 'al carrito'} - $ {(parseFloat(product.price) * quantity).toFixed(2)} */}
                       Agregar al carrito
                     </button>
                   </div>

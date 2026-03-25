@@ -153,7 +153,7 @@ export const CartDrawer = () => {
                           {item.category}
                         </p>
                         <p className="text-sm font-bold text-gray-900 dark:text-white mt-1">
-                          {formatTotal(item.price * item.quantity)} €
+                          {formatTotal(item.price * item.quantity)} $
                         </p>
 
                         {/* Control de Cantidad */}
@@ -269,7 +269,7 @@ export const CartDrawer = () => {
                 {/* Total */}
                 <div className="flex justify-between text-4xl font-bold text-gray-900 dark:text-white mb-3">
                   <p>Sub Total</p>
-                  <p className="text-yellow-600 dark:text-yellow-400">{formatTotal(total())} €</p>
+                  <p className="text-yellow-600 dark:text-yellow-400">{formatTotal(total())} $</p>
                 </div>
 
                 {/* Nota de Delivery */}
